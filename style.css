@@ -1,0 +1,59 @@
+.mainPage {
+    height: 95vh;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+}
+ .image {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+.image img {
+    width: 100%;
+    height: auto;
+    display: none;
+    position: relative;
+}
+
+
+.btn1, .btn2, .btn3 {
+    border-radius: 50%;
+    border: black 0.5px solid;
+    height: 15px;
+    width: 15px;
+    background-color: transparent;
+   
+}
+.dots { 
+    display: flex;
+    gap: 10px;
+
+
+}
+.prev {
+    margin-right: 20px;
+}
+.next {
+    margin-left: 20px;
+}
+
+.arrows {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    padding-top: 2%;
+    
+}
+
+#visible {
+    display: block;
+    height: 500px;
+    width: 1000px;
+}
+
+#filled {
+    background-color: grey;
+}
